@@ -13,18 +13,22 @@ button {
   border-radius: 16px;
   border: none;
   padding: 4px 16px;
+  margin: 0px 3px;
 }
 
+/* カーソルを合わせたときの動きを指定 */
 button:hover {
   background-color: #ff7fff;
   color: #fff;
   cursor: pointer;
 }
 
+/* liタグで囲われた範囲に対する装飾 */
 li {
   margin-right: 8px;
 }
 
+/* 各クラスに対する装飾　.（ドット）がclassの意味 */
 .input-area {
   background-color: #c1ffff;
   width: 400px;
@@ -34,7 +38,7 @@ li {
   border-radius: 8px;
 }
 
-.inconp-area {
+.incomp-area {
   background-color: #c6ffe2;
   width: 400px;
   min-height: 200px;

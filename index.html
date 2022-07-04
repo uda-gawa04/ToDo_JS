@@ -6,36 +6,32 @@
   </head>
 
   <body>
+    <!-- 入力するエリア -->
     <div class="input-area">
-      <input placeholder="TODOを入力" />
-      <button>追加</button>
+      <!-- 入力された文字列に対するidと、初めに表示させる文字を指定 -->
+      <!-- idを付与することで、JS側で操作することができる -->
+      <input id="add-text" placeholder="TODOを入力" />
+      <!-- 追加ボタンを押したときに渡されるidを指定 -->
+      <button id="add-button">追加</button>
     </div>
-
-    <div class="inconp-area">
+    <!-- 未完了ToDoリストのエリア -->
+    <div class="incomp-area">
+      <!-- CSSを適用させるためのclassを指定 -->
       <p class="title">未完了のTODO</p>
-      <ul>
-        <div class="list-row">
-          <li>TODO</li>
-          <button>完了</button>
-          <button>削除</button>
-        </div>
-        <div class="list-row">
-          <li>TODO</li>
-          <button>完了</button>
-          <button>削除</button>
-        </div>
+      <!-- ulで囲われた範囲を"incomp=list"と名付ける -->
+      <ul id="incomp-list">
+        <!-- divで囲われた範囲を"list-row"と名付ける → CSSで項目を横並びにする-->
+        <!-- 追加ボタンが押された時、この範囲を追加したい -->
       </ul>
+    </div>
+    <!-- 完了リストのエリア -->
+    <div class="comp-area">
+      <!-- CSSを適用させるためのclassを指定 -->
+      <p class="title">完了したTODO</p>
+
+      <ul id="comp-list"></ul>
     </div>
 
-    <div class="comp-area">
-      <p class="title">完了したTODO</p>
-      <ul>
-        <div class="list-row">
-          <li>TODOでした</li>
-          <button>戻す</button>
-        </div>
-      </ul>
-    </div>
     <script src="src/index.js"></script>
   </body>
 </html>
